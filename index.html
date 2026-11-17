@@ -262,6 +262,7 @@ canvas#fx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-in
         <div class="name">Никита,</div>
         <h2 style="margin-top:0">с днём рождения!</h2>
         <p id="p-text"></p>
+        <p style="font-weight:700">Ты отлично потрудился, хотим, чтобы ты уделил время себе! Твой пар у Алины!</p>
         <div class="note" id="p-note"></div>
         <button class="btn" id="party">Ещё конфетти</button>
         <button class="btn ghost" id="again">Пройти ещё раз, для удовольствия</button>
@@ -362,7 +363,7 @@ function step(){
 
 function check(){
   show('s-check');
-  const msgs = ['Проверяем ответы…','Сверяемся с 46-м этажом…','Уточняем у Германа Оскаровича…','Считаем баллы Спасибо…'];
+  const msgs = ['Проверяем ответы…','Сверяемся с КАЦ…','Уточняем у Германа Оскаровича…','Считаем бонусы Спасибо…'];
   let k = 0; $('checkmsg').textContent = msgs[0];
   const t = setInterval(() => { k++; if(k < msgs.length) $('checkmsg').textContent = msgs[k]; }, 1800);
   setTimeout(() => { clearInterval(t); result(); }, 7400);
